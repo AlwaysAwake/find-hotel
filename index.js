@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 
 const checkAvailable = async () => {
   const targetUrl = "http://www.booking.com/Share-LGK5MB";
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
   await page.goto(targetUrl);
